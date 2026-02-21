@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naomi Visuals</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="IMAGES/NV_LOGO_ROUND.png">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="IMAGES/NV_LOGO_FULL.png" alt="Naomi Visuals Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <style>
+    
+    /* RESET & BASE STYLES */
+    body {
+      background-color: #1d1d1d;
+      color: white;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    /* PROJECT HEADER */
+    .project-header {
+      width: 100%;
+      padding: 80px 0;
+      top: 0;
+      margin-top: 0;
+      border-bottom: 1px solid rgb(46, 46, 46);
+    }
+
+    .project-header-inner {
+      display: flex;
+      align-items: stretch;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+    .project-icon {
+      width: 600px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-header-text {
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .project-header-text h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      line-height: 1.2;
+    }
+
+    .project-header-text p {
+      margin-top: 15px;
+      font-size: 1rem;
+      line-height: 1.9;
+      max-width: 500px;
+    }
+
+    /* TAGS */
+    .Tags-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      justify-content: flex-start;
+    }
+
+    .Tags {
+      background-color: #444444;
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid #585858;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .Tags p {
+      margin: 0;
+    }
+
+    /* PROJECT IMAGES */
+    .project-image {
+      width: 100%;
+      display: block;
+      margin: 40px 0;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-icon:hover {
+      outline: 3px solid #ffffff;
+      transform: scale(1.02);
+    }
+
+    .project-image:hover {
+      outline: 3px solid #ffffff;
+      transform: scale(1.02);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .project-header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .project-icon {
+        width: 260px;
+        height: auto;
+      }
+
+      .project-header-text h1 {
+        font-size: 2rem;
+      }
+
+      .project-header-text p {
+        max-width: 100%;
+      }
+
+      .Tags-group {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .project-header-text h1 {
+        font-size: 1.8rem;
+      }
+
+      .project-header-text p {
+        font-size: 0.9rem;
+      }
+
+      .Tags-group {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PROJECT HEADER -->
+  <div class="project-header">
+    <div class="project-header-inner">
+
+      <img src="PROJECTS/Untitled-1.png" alt="Project Icon" class="project-icon">
+
+      <div class="project-header-text">
+        <h1>StewardTrack <br> Social Media Design</h1>
+
+        <p>
+          StewardTrack is a comprehensive church administration and membership
+          management platform designed to simplify how ministries operate.
+          It enables organizations to efficiently manage member data,
+          streamline financial tracking, and coordinate ministry activities
+          all within one unified system.
+        </p>
+
+        <!-- TAGS -->
+        <div class="Tags-group">
+          <div class="Tags">
+            <i data-lucide="tag"></i>
+            <p>Graphic Design</p>
+          </div>
+          <div class="Tags">
+            <i data-lucide="tag"></i>
+            <p>Marketing Collaterals</p>
+          </div>
+          <div class="Tags">
+            <i data-lucide="tag"></i>
+            <p>Social Media</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <style>
+    .Tags {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .Tags svg {
+      width: 18px;
+      height: 18px;
+      stroke: #ffffff;
+      margin-right: 2px;
+    }
+
+    .Tags p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    </style>
+
+  <main>
+    <img src="IMAGES/banner.png" alt="StewardTrack Banner" class="project-image">
+    <img src="IMAGES/ST_1.png" alt="StewardTrack Screen 1" class="project-image">
+  </main>
+
+  <div class="reflection">
+      <h1>The Design and Copywrite Aspect</h1>
+      <p>
+        For StewardTrack’s social media, I focused on creating a style that really connects with the audience while addressing their challenges. I used strong visuals and clear copywrite to portray the problems users face, making it relatable while being paired with metaphorical imagery. Combining these imagery with thoughtful messaging, I strived to make the post approachable, engaging, and meaningful to viewers.  
+      </p>
+    </div>
+    
+    <main>
+       <img src="IMAGES/ST_2.png" alt="StewardTrack Screen 2" class="project-image">
+       <img src="IMAGES/ST_3.png" alt="StewardTrack Screen 3" class="project-image">
+    </main>
+
+     <div class="reflection">
+      <h1>StewardTrack Design Concept</h1>
+      <p>
+        For StewardTrack’s social media, I focused on keeping the visuals consistent and easy to recognize while making the content engaging and easy to understand. A cohesive color palette and typography was used so every post aligns with the brand. I also designed graphics and layouts that highlighted key information clearly, using icons and clean spacing to make everything more approachable.
+      </p>
+    </div>
+
+    <main>
+        <img src="IMAGES/POST_5_STEWARDTRACK_1.png" alt="StewardTrack Screen 2" class="project-image">
+    </main>
+
+    <!-- SPLIT IMAGE LAYOUT AFTER IMAGE-->
+ <section class="split-image-section-1">
+    <div class="split-image-inner-1">
+
+      <div class="split-image-item-1">
+        <img src="IMAGES/POST_1_STEWARDTRACK.png" alt="Left Image">
+      </div>
+
+      <div class="split-image-item-1">
+        <img src="IMAGES/POST_2_STEWARDTRACK.png" alt="Right Image">
+      </div>
+        </div>
+  </section>
+
+  <style>
+/* SPLIT IMAGE SECTION */
+.split-image-section-1 {
+  width: 100%;
+  margin-top: -15px;
+  margin-bottom: 80px;
+}
+
+/* Inner container respects normal viewport width */
+.split-image-inner-1 {
+  display: flex;
+  gap: 20px; /* thin divider like reference */
+  max-width: 1600px;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Image wrapper prevents overflow on hover */
+.split-image-item-1 {
+  flex: 1;
+  border-radius: 15px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Image styling — aligned with your project images */
+.split-image-item-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, outline 0.3s ease;
+  cursor: pointer;
+  transform: scale(1); /* no base expansion */
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* Hover stays INSIDE container */
+.split-image-item-1 img:hover {
+  outline: 3px solid #ffffff;
+  transform: scale(1.02);
+}
+
+/* MOBILE STACK */
+@media (max-width: 900px) {
+  .split-image-inner-1 {
+    flex-direction: column;
+  }
+}
+  </style>
+  
+    <div class="reflection">
+      <h1>Designing the StewardTrack Social Media Posts</h1>
+      <p>In designing the social media posts, I focused on staying true to the brand while making each post visually engaging. Even though the designs are simple, I carefully balanced colors, typography, and layout to communicate the message clearly and creatively. The company's aim was to make each post immediately understandable while keeping it aligned with the brand’s identity, proving that simplicity can still be powerful and memorable in capturing the audience’s attention.</p>
+   </div>
+
+  <style>
+    .reflection {
+       text-align: left;
+        max-width: 1120px;
+        margin: auto;
+        padding: 0;
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+
+     .reflection h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      line-height: 1.2;
+    }
+
+    .reflection p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      line-height: 1.9;
+    }
+  </style>
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- Logo Placeholder -->
+    <div class="footer-brand">
+      <img src="IMAGES/NV_LOGO_FULL.png" alt="Naomi Visuals Logo" class="footer-logo">
+    </div>
+
+     <!-- Navigation -->
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+
+  <!-- Minimalist Social Icons -->
+<div class="footer-socials">
+  <h3>Follow</h3>
+ <div class="social-icons">
+    <!-- Email -->
+      <a href="https://mail.google.com/mail/?view=cm&to=yamnaomicheska@gmail.com" target="_blank" aria-label="Email">
+        <img src="ICONS/PNG/envelope_1@4x.png" alt="Email Icon" class="footer-icon">
+      </a>
+    <!-- Behance -->
+        <a href="https://www.behance.net/naoyam1" aria-label="Behance">
+          <img src="ICONS/PNG/BEHANCE@4x.png" alt="Behance" class="footer-icon">
+        </a>
+    <!-- Pinterest -->
+      <a href="https://ph.pinterest.com/naomicyam04/" target="_blank" aria-label="Email">
+        <img src="ICONS/PNG/PINTEREST@4x.png" alt="Email Icon" class="footer-icon">
+      </a>
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Naomi Visuals. All rights reserved.</p>
+  </div>
+
+</footer>
+
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
