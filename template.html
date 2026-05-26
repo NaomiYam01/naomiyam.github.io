@@ -1,0 +1,443 @@
+<main>
+    <img src="IMAGES/Branding-Leveller-Paper-Logo-Mockup.png" alt="StewardTrack Banner" class="project-image-1">
+  </main>
+
+   <!-- SPLIT IMAGE LAYOUT -->
+  <section class="split-image-section">
+    <div class="split-image-inner">
+
+      <div class="split-image-item">
+        <img src="IMAGES/FIGARO MOCKUP (2).png" alt="Left Image">
+      </div>
+
+      <div class="split-image-item">
+        <img src="IMAGES/FIGARO MOCKUP (3).png" alt="Right Image">
+      </div>
+        </div>
+  </section>
+
+  <style>
+/* SPLIT IMAGE SECTION */
+.split-image-section {
+  width: 100%;
+  margin: 50px 0;
+  margin-top: 6.4%;
+  margin-bottom: 5%;
+}
+
+/* Inner container respects normal viewport width */
+.split-image-inner {
+  display: flex;
+  gap: 20px; /* thin divider like reference */
+  max-width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Image wrapper prevents overflow on hover */
+.split-image-item {
+  flex: 1;
+  border-radius: 15px;
+}
+
+/* Image styling — aligned with your project images */
+.split-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, outline 0.3s ease;
+  cursor: pointer;
+  transform: scale(1); /* no base expansion */
+}
+
+/* Hover stays INSIDE container */
+.split-image-item img:hover {
+  outline: 3px solid #ffffff;
+  transform: scale(1.02);
+}
+
+/* MOBILE STACK */
+@media (max-width: 900px) {
+  .split-image-inner {
+    flex-direction: column;
+  }
+}
+</style>
+
+
+
+
+ <!-- SPLIT IMAGE LAYOUT AFTER IMAGE-->
+  <section class="split-image-section-1">
+    <div class="split-image-inner-1">
+
+      <div class="split-image-item-1">
+        <img src="IMAGES/packaging1.png" alt="Left Image">
+      </div>
+
+      <div class="split-image-item-1">
+        <img src="IMAGES/FIGARO_ADCREATIVES_BMMA3A (3).png" alt="Right Image">
+      </div>
+        </div>
+  </section>
+
+<style>
+/* SPLIT IMAGE SECTION */
+.split-image-section-1 {
+  width: 100%;
+  margin: 50px 0;
+  margin-top: -3.4%;
+  margin-bottom: 5%;
+}
+
+/* Inner container respects normal viewport width */
+.split-image-inner-1 {
+  display: flex;
+  gap: 20px; /* thin divider like reference */
+  max-width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Image wrapper prevents overflow on hover */
+.split-image-item-1 {
+  flex: 1;
+  border-radius: 15px;
+}
+
+/* Image styling — aligned with your project images */
+.split-image-item-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, outline 0.3s ease;
+  cursor: pointer;
+  transform: scale(1); /* no base expansion */
+}
+
+/* Hover stays INSIDE container */
+.split-image-item-1 img:hover {
+  outline: 3px solid #ffffff;
+  transform: scale(1.02);
+}
+
+/* MOBILE STACK */
+@media (max-width: 900px) {
+  .split-image-inner-1 {
+    flex-direction: column;
+  }
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naomi Visuals</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="IMAGES/NV_LOGO_ROUND.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="IMAGES/NV_LOGO_FULL.png" alt="Naomi Visuals Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <style>
+    
+    /* RESET & BASE STYLES */
+    body {
+      background-color: #1d1d1d;
+      color: white;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    /* PROJECT HEADER */
+    .project-header {
+      width: 100%;
+      padding: 80px 0;
+      top: 0;
+      margin-top: 0;
+      border-bottom: 1px solid rgb(46, 46, 46);
+    }
+
+    .project-header-inner {
+      display: flex;
+      align-items: stretch;
+      gap: 30px;
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+    .project-icon {
+      width: 600px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-header-text {
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .project-header-text h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      line-height: 1.2;
+    }
+
+    .project-header-text p {
+      margin-top: 15px;
+      font-size: 1rem;
+      line-height: 1.9;
+      max-width: 500px;
+    }
+
+    /* TAGS */
+    .Tags-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      justify-content: flex-start;
+    }
+
+    .Tags {
+      background-color: #444444;
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid #585858;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .Tags p {
+      margin: 0;
+    }
+
+    /* PROJECT IMAGES */
+    .project-image {
+      width: 100%;
+      display: block;
+      margin: 50px 0;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-icon:hover {
+      outline: 3px solid #ffffff;
+      transform: scale(1.02);
+    }
+
+    .project-image:hover {
+      outline: 3px solid #ffffff;
+      transform: scale(1.02);
+    }
+
+     .project-image-1 {
+      width: 100%;
+      display: block;
+      margin: 50px 0;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .project-image-1:hover {
+      outline: 3px solid #ffffff;
+      transform: scale(1.02);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .project-header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .project-icon {
+        width: 260px;
+        height: auto;
+      }
+
+      .project-header-text h1 {
+        font-size: 2rem;
+      }
+
+      .project-header-text p {
+        max-width: 100%;
+      }
+
+      .Tags-group {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .project-header-text h1 {
+        font-size: 1.8rem;
+      }
+
+      .project-header-text p {
+        font-size: 0.9rem;
+      }
+
+      .Tags-group {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PROJECT HEADER -->
+  <div class="project-header">
+    <div class="project-header-inner">
+
+      <img src="PROJECTS/BANNER-POSTER-MMASEMINAR copy 2.png" alt="Project Icon" class="project-icon">
+
+      <div class="project-header-text">
+        <h1>Multimedia Craze Branding</h1>
+
+        <p>
+        Multimedia Craze is a seminar held in 2025 that focused on the growing influence of multimedia in today’s digital and creative industries. It teaches how different media, such as graphic design, creative entrepreneurship, films, and photography, work together to communicate ideas effectively.
+        </p>
+
+        <!-- TAGS -->
+        <div class="Tags-group">
+          <div class="Tags"><p>Branding</p></div>
+          <div class="Tags"><p>Marketing Collaterals</p></div>
+          <div class="Tags"><p>Graphic Design</p></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <img src="IMAGES/MMA_CRAZE_MOCKUPS_POST1.png" alt="StewardTrack Banner" class="project-image-1">
+    <img src="IMAGES/MMA_CRAZE_MOCKUPS_POST2.png" alt="StewardTrack Banner" class="project-image">
+    <img src="IMAGES/MMA_CRAZE_MOCKUPS_POST3.png" alt="StewardTrack Banner" class="project-image">
+    <img src="IMAGES/MMA_CRAZE_MOCKUPS_POST4.png" alt="StewardTrack Banner" class="project-image">
+    <img src="IMAGES/NEW-SOC-MED--POSTER-MMASEMINAR copy (2).png" alt="StewardTrack Banner" class="project-image">
+  </main>
+  
+   <div class="reflection">
+    <h1>Designing the MMA Craze Brand</h1>
+    <p>The Multimedia Craze design achieved its goal of presenting the seminar as vibrant and creative. I used bold colors, playful typography, and a cohesive visual system to reflect the energy of multimedia. Applying the branding across merchandise, digital posts, and event assets showed its flexibility and consistency. Although I spent time refining details and readability, the effort paid off, resulting in a clear and engaging seminar identity.</p>
+  </div>
+
+  <style>
+    .reflection {
+       text-align: left;
+        width: 55%;
+        margin: auto;
+        margin-top: -3%;
+        margin-bottom: -2.5%;
+    }
+
+     .reflection h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      line-height: 1.2;
+    }
+
+    .reflection p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      line-height: 1.9;
+    }
+  </style>
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- Logo Placeholder -->
+    <div class="footer-brand">
+      <img src="IMAGES/NV_LOGO_FULL.png" alt="Naomi Visuals Logo" class="footer-logo">
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </div>
+
+  <!-- Minimalist Social Icons -->
+<div class="footer-socials">
+  <h3>Follow</h3>
+  <div class="social-icons">
+
+    <!-- Behance -->
+        <a href="https://www.behance.net/naoyam1" aria-label="Behance">
+          <img src="ICONS/PNG/BEHANCE@4x.png" alt="Behance" class="footer-icon">
+        </a>
+
+        <!-- Email -->
+   <a href="https://mail.google.com/mail/?view=cm&to=yamnaomicheska@gmail.com" target="_blank" aria-label="Email">
+  <img src="ICONS/PNG/envelope_1@4x.png" alt="Email Icon" class="footer-icon">
+</a>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Naomi Visuals. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+</body>
+</html>

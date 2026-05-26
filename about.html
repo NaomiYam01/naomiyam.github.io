@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naomi Visuals</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="IMAGES/NV_LOGO_ROUND.png">
+</head>
+<body>
+   <nav class="navbar">
+    <div class="logo">
+      <img src="IMAGES/NV_LOGO_FULL.png" alt="Naomi Visuals Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <style>
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: white;
+  color: white;
+}
+
+/* ===== HERO ===== */
+.about-hero {
+  background: white;
+  color: #131313;
+  padding: 100px 10%;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 450px;
+}
+
+/* UPDATED HERO TITLE (replaced name) */
+.hero-text h1 {
+  font-size: 75px;
+  margin-bottom: 15px;
+  color: #f10e16; /* lighter red */
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* accent-style line effect */
+.hero-text h1 span {
+  font-weight: 300;
+  color: #131313;
+}
+
+.hero-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #131313;
+}
+
+.hero-img {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 620px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-top: -6%;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #e60e15;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+
+  .hero-btn:hover {
+    background-color: #131313; 
+  }
+
+ /* ===== MOBILE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse; /* puts image above text */
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero-img {
+    margin-top: -10%; /* lift image higher */
+  }
+
+  .hero-img img {
+    max-width: 80%; /* shrink image for smaller screens */
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .hero-img {
+    margin-top: -15%; /* lift image even more */
+  }
+
+  .hero-img img {
+    max-width: 70%; /* smaller image */
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+}
+
+
+/* ===== SECTION HEADERS ===== */
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 55px; /* LESS GAP BETWEEN SECTIONS */
+  opacity: 0.8;
+}
+
+/* ===== SKILLS (RED BG) ===== */
+.skills-section {
+  padding: 70px 10%; /* reduced top padding */
+  background: #ce171e;
+  color: white;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.skill-tag {
+  background: rgba(255,255,255,0.15);
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.skill-tag:hover {
+  background: white;
+  color: #ce171e;
+}
+
+/* ===== EXPERIENCE (NOW LIGHT CARD / DARK BG) ===== */
+.experience-section {
+  padding: 70px 10%; /* reduced spacing */
+  background: #0f0f0f; /* DARKER BACKGROUND */
+  color: white;
+  margin-bottom: 0;
+}
+
+.experience-card {
+  background: #161616; /* LIGHT CARD */
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border-left: none;
+  outline: 1px solid #222222;
+}
+
+.exp-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.exp-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.exp-date {
+  background: none;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+  outline: 1px solid white;
+}
+
+.exp-role {
+  background: none;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+  outline: 1px solid white;
+}
+
+/* ===== SOFTWARE (NOW DARKER SECTION / LIGHT CARD STYLE SWAP) ===== */
+.software-section {
+  padding: 70px 10%; /* reduced spacing */
+  background: #0f0f0f; /* darker background */
+  color: white;
+  margin-top: -4.5%;
+}
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+}
+
+.software-item {
+  background: none; /* swapped to light card */
+  color: #131313;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.software-item p {
+  color: white;
+}
+
+.software-item:hover {
+  transform: scale(1.05);
+}
+
+.software-item img {
+  width: 150px;
+  align-items: center;
+}
+
+/* ===== FLEX LIST SECTION (WHITE BG) ===== */
+.list-section {
+  padding: 70px 10%; /* reduced spacing */
+  background: white;
+  color: #131313;
+}
+
+.list-flex {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.list-group {
+  flex: 1 1 400px;
+}
+
+.list-box {
+  background: #f5f5f5;
+  padding: 35px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+
+.list-box ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.list-box li {
+  padding: 18px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 17px;
+}
+
+.list-box li:last-child {
+  border-bottom: none;
+}
+
+.list-box li::before {
+  content: "•";
+  color: #ce171e;
+  margin-right: 10px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 17px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+}
+
+/* ===== TABLETS (max-width: 1024px) ===== */
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 70px 8%;
+  }
+
+  .hero-text h1 {
+    font-size: 55px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-container {
+    gap: 40px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+/* ===== LARGE MOBILE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 6%;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-intro {
+    font-size: 14px;
+  }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 50px 5%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-intro {
+    font-size: 13px;
+  }
+
+  .skill-tag {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+
+  .exp-title {
+    font-size: 18px;
+  }
+}
+
+/* ===== TABLETS (max-width: 1024px) ===== */
+@media (max-width: 1024px) {
+  .software-section {
+    padding: 50px 8%;
+    margin-top: -7.5%;
+  }
+
+  .software-grid {
+    gap: 18px;
+  }
+
+  .software-item {
+    padding: 18px;
+  }
+
+  .software-item img {
+    width: 120px;
+  }
+}
+
+/* ===== LARGE MOBILE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .software-section {
+    padding: 40px 6%;
+  }
+
+  .software-grid {
+    gap: 15px;
+  }
+
+  .software-item {
+    padding: 15px;
+  }
+
+  .software-item img {
+    width: 100px;
+  }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .software-section {
+    padding: 30px 5%;
+    margin-top: -7%;
+  }
+
+  .software-grid {
+    gap: 12px;
+  }
+
+  .software-item {
+    padding: 12px;
+  }
+
+  .software-item img {
+    width: 80px;
+  }
+}
+
+</style>
+
+<body>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="hero-container">
+    
+    <div class="hero-text">
+      <h1><span class="h1span">I AM A </span><br>MULTIMEDIA ARTIST</h1>
+      <p>
+         I’m a multimedia artist who enjoys creating visuals that communicate ideas clearly and creatively. I’m currently exploring opportunities where I can grow, collaborate, and bring ideas to life through design and visual storytelling.
+      </p>
+
+       <a href="contacts.html" class="hero-btn">Let's Talk</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="IMAGES/NAOMI1.png" alt="Profile">
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section">
+  <h2 class="section-title">Skills</h2>
+  <p class="section-intro">A diverse set of creative and technical abilities applied across multiple disciplines.</p>
+  <div class="skills-tags">
+    <div class="skill-tag">Graphic Design</div>
+    <div class="skill-tag">Photography</div>
+    <div class="skill-tag">Video Editing</div>
+    <div class="skill-tag">3D Modeling</div>
+    <div class="skill-tag">UI/UX Design</div>
+    <div class="skill-tag">Motion Graphics</div>
+    <div class="skill-tag">Photo Manipulation</div>
+    <div class="skill-tag">Poster Design</div>
+    <div class="skill-tag">Branding & Visual Identity Design</div>
+    <div class="skill-tag">Campaign Design</div>
+    <div class="skill-tag">Basic Web Programming</div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience-section">
+  <h2 class="section-title">Work Experience</h2>
+  <p class="section-intro">Hands-on industry experience in design, media, and digital platforms.</p>
+
+ <div class="experience-card">
+  <div class="exp-title">CortanaTech Solutions, Inc.</div>
+  <div class="exp-meta">
+    <span class="exp-date">2026</span>
+    <span class="exp-role">Graphic & UI/UX Designer, Copywriter, Email & Video Editor</span>
+  </div>
+  <ul class="exp-desc">
+    <li>Created social media content and email campaigns aligned with brand identity.</li>
+    <li>Edited YouTube tutorial videos for promotional and educational use.</li>
+    <li>Designed landing page layouts and wrote copy for web-based marketing campaigns.</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <div class="exp-title">CLTV36</div>
+  <div class="exp-meta">
+    <span class="exp-date">2025</span>
+    <span class="exp-role">Intern Graphic, UI/UX & Motion Designer</span>
+  </div>
+  <ul class="exp-desc">
+    <li>Designed advertisements for media use.</li>
+    <li>Created motion graphics such as bumpers.</li>
+    <li>Developed logos and website UI/UX designs.</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <div class="exp-title">STI San Fernando BMMA Seminar</div>
+  <div class="exp-meta">
+    <span class="exp-date">2025</span>
+    <span class="exp-role">Graphic Designer</span>
+  </div>
+  <ul class="exp-desc">
+    <li>Developed visual style for the event.</li>
+    <li>Created promotional materials.</li>
+    <li>Designed supporting visual assets for the seminar.</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <div class="exp-title">Local Streetwear Clothing</div>
+  <div class="exp-meta">
+    <span class="exp-date">2025</span>
+    <span class="exp-role">Digital Artist</span>
+  </div>
+  <ul class="exp-desc">
+    <li>Created digital illustrations for merchandise.</li>
+    <li>Designed artwork for streetwear products.</li>
+    <li>Produced visual concepts for clothing branding.</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <div class="exp-title">Tita Chato’s Kitchen</div>
+  <div class="exp-meta">
+    <span class="exp-date">2024</span>
+    <span class="exp-role">Brand & Social Media Designer</span>
+  </div>
+  <ul class="exp-desc">
+    <li>Designed the official logo for the business.</li>
+    <li>Created branding materials for identity use.</li>
+    <li>Developed marketing materials for promotion.</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <div class="exp-title">VR Bruce</div>
+  <div class="exp-meta">
+    <span class="exp-date">2023</span>
+    <span class="exp-role">Logo Designer</span>
+  </div>
+  <ul class="exp-desc">
+    <li>Created the official business logo.</li>
+    <li>Developed visual identity for a gaming brand.</li>
+    <li>Designed logo concepts for brand representation.</li>
+  </ul>
+</div>
+</section>
+
+<!-- SOFTWARE -->
+<section class="software-section">
+  <h2 class="section-title">Software Used</h2>
+  <p class="section-intro">Tools and technologies utilized to execute creative and technical work.</p>
+  <div class="software-grid">
+    <div class="software-item"><img src="icons/PNG/PS@4x.png"><p>Photoshop</p></div>
+    <div class="software-item"><img src="icons/PNG/Ai@4x.png"><p>Illustrator</p></div>
+    <div class="software-item"><img src="icons/PNG/Id@4x.png"><p>InDesign</p></div>
+    <div class="software-item"><img src="icons/PNG/Ae@4x.png"><p>After Effects</p></div>
+    <div class="software-item"><img src="icons/PNG/Capcut@4x.png"><p>Capcut</p></div>
+    <div class="software-item"><img src="icons/PNG/Figma@4x.png"><p>Figma</p></div>
+    <div class="software-item"><img src="icons/PNG/VS@4x.png"><p>VS Code</p></div>
+    <div class="software-item"><img src="icons/PNG/Blender@4x.png"><p>Blender</p></div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL DEV + ACCOMPLISHMENTS -->
+<section class="list-section">
+  <div class="list-flex">
+
+    <div class="list-group">
+      <h2 class="section-title">Professional Development</h2>
+      <p class="section-intro">Continuous learning through workshops and training programs.</p>
+      <div class="list-box">
+        <ul>
+          <li>2025 – UX/UI App & Web Design Workshop</li>
+          <li>2025 – The Art of Graphic Design</li>
+          <li>2025 – Design Thinking</li>
+          <li>2025 – Emcee & Designer: The Art of Making It!</li>
+          <li>2024 – Regional IT Education Assembly</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="list-group">
+      <h2 class="section-title">Accomplishments</h2>
+      <p class="section-intro">Recognitions and achievements earned through academic and creative excellence.</p>
+      <div class="list-box">
+        <ul>
+          <li>President’s Lister (2022–Present)</li>
+          <li>1st Place Essay – Does It! (2023–2026)</li>
+          <li>1st Place – BMMA Fair Graphic Design Competition (2025)</li>
+          <li>Best in Poster Making (2025)</li>
+          <li>Best in Digital Photography (2024)</li>
+          <li>President – Multimedia Organization (2023)</li>
+          <li>High Honors (2016–2022)</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+<!-- ===== RESUME DOWNLOAD SECTION (SKILLS-STYLE MATCH) ===== -->
+<section class="resume-section">
+  <h2 class="section-title">Get a Copy of my Resume</h2>
+  <p class="section-intro">
+    Download my full resume to view detailed experience, skills, and qualifications.
+  </p>
+
+  <div class="resume-card">
+    <a href="PROJECTS/NAOMIYAM_RESUME.pdf" download class="resume-btn">
+      Download Resume
+    </a>
+  </div>
+</section>
+
+<style>
+/* ===== RESUME SECTION (MATCHING SKILLS STYLE) ===== */
+.resume-section {
+  padding: 50px 10%;
+  background: #ce171e;
+  color: white;
+  text-align: center;
+  margin-bottom: -9%;
+}
+
+.resume-card {
+  margin-top: 10px; /* aligned closer like skills */
+  display: flex;
+  justify-content: center;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.resume-btn:hover {
+  background: white;
+  color: #ce171e;
+}
+</style>
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- Logo Placeholder -->
+    <div class="footer-brand">
+      <img src="IMAGES/NV_LOGO_FULL.png" alt="Naomi Visuals Logo" class="footer-logo">
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+
+  <!-- Minimalist Social Icons -->
+<div class="footer-socials">
+  <h3>Follow</h3>
+  <div class="social-icons">
+    <!-- Email -->
+      <a href="https://mail.google.com/mail/?view=cm&to=yamnaomicheska@gmail.com" target="_blank" aria-label="Email">
+        <img src="ICONS/PNG/envelope_1@4x.png" alt="Email Icon" class="footer-icon">
+      </a>
+    <!-- Behance -->
+        <a href="https://www.behance.net/naoyam1" aria-label="Behance">
+          <img src="ICONS/PNG/BEHANCE@4x.png" alt="Behance" class="footer-icon">
+        </a>
+    <!-- Pinterest -->
+      <a href="https://ph.pinterest.com/naomicyam04/" target="_blank" aria-label="Email">
+        <img src="ICONS/PNG/PINTEREST@4x.png" alt="Email Icon" class="footer-icon">
+      </a>
+  </div>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Naomi Visuals. All rights reserved.</p>
+  </div>
+
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  });
+
+});
+</script>
+
+</body>
+</html>
